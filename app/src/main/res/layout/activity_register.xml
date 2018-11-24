@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+           >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/regEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+
+                android:hint="Email"
+                app:met_baseColor="#0056d3"
+                app:met_errorColor="#ddaa00"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/ic_email"
+                app:met_primaryColor="#982360" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/regPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Password"
+                android:inputType="numberPassword"
+                app:met_baseColor="#0056d3"
+                app:met_errorColor="#ddaa00"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/ic_pass"
+                app:met_primaryColor="#982360" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/regConfPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Confirm Password"
+                app:met_baseColor="#0056d3"
+                android:inputType="numberPassword"
+                app:met_errorColor="#ddaa00"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/ic_pass"
+                app:met_primaryColor="#982360" />
+        <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:orientation="horizontal">
+            <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Admin"
+                    android:id="@+id/regAdmin"
+                    android:layout_weight="1"
+                    android:checked="true"/>
+            <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mahasiswa"
+                    android:layout_weight="1"
+                    android:id="@+id/regMahasiswa"
+                    android:checked="false"/>
+        </RadioGroup>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:id="@+id/regBtnRegister"
+                android:background="@color/colorPrimaryDark"
+                android:text="Register"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:id="@+id/regBtnLog"
+                android:gravity="right|center"
+                android:text="Back to Login!!"
+                android:textStyle="italic" />
+        <ProgressBar android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/progress"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
