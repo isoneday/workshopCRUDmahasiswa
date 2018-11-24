@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ProjectOjekOnline</string>
+    <string name="app_name">Project University with Kotlin</string>
     <string name="requireemail">Please enter email addres</string>
     <string name="requirepassword">Please enter password</string>
     <string name="minimumpassword">Password Too Short!!</string>
